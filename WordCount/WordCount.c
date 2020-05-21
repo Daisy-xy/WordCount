@@ -7,7 +7,6 @@ int main()
 	char filename[30];
 	//totalNum[1]为总字符数  totalNum[2]为总单词数 
 	int totalNum[3] = {0,0,0};
-	printf("Input file name: ");
 	scanf("%s", filename);
 	if(getCharNum(filename,totalNum))
 	{
@@ -59,7 +58,6 @@ int *getCharNum(char *filename, int *totalNum)
 		totalNum[0]++;
 		totalNum[1] += charNum;
 		totalNum[2] += wordNum;
-		printf("%d,%d\n",wordNum,charNum);
 		charNum = 0;
 		wordNum = 0;
 	}
